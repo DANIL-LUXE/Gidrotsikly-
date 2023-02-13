@@ -1,0 +1,20 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/breadcrumbs";
+@import "./components/checkbox";
+// INDEX
+@import "./components/header";
+@import "./components/index/banner-section";
+@import "./components/index/searth";
+@import "./components/index/categories";
+@import "./components/index/product";
+@import "./components/index/sale";
+@import "./components/footer";
+// COTALOG
+
+@import "./components/catalog/catalog-section.scss";

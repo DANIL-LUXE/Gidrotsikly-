@@ -1,0 +1,123 @@
+
+.header-top{
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 122px;
+
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    &:not(:last-child){
+      padding-right: 50px;
+    }
+  }
+  &__link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--dark-color);
+  }
+  &__box{
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  &__addres{
+    position: relative;
+    display: inline-block;
+    margin-right: 60px;
+    padding-left: 30px;
+    width: 265px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color:var(--dark-color);
+    &::before{
+      content:'';
+      position: absolute;
+      background-image: url('../img/icons/addres.svg');
+      width: 30px;
+      height: 30px;
+      top: -10px;
+      left: 0;
+
+    }
+  }
+  &__user-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+  }
+  &__user-item{
+    display: inline-block;
+    .basket{
+      position: relative;
+    }
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+}
+.basket-number{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color:var(--accent-color);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color:var(--light-color);
+  right: -14px;
+  top: 0;
+}
+.header-bottom{
+  background-color:var(--base-color);
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+.menu-categories{
+  display: flex;
+  align-items: center;
+  &__item{
+    position: relative;
+    display: inline-block;
+
+    &:not(:last-child){
+      margin-right: 60px;
+    }
+  }
+  &__link{
+    font-weight: 400;
+    font-size: 20px;
+    color:var(--dark-color);
+    transition: all .3s ease-in-out;
+    &::before {
+	content: '';
+	position: absolute;
+	left: 0;
+  bottom: -15px;
+	width: 0;
+	height: 2.5px;
+  border-radius: 5px;
+	background-color: var(--accent-color);
+}
+
+&:hover:before {
+	width: 100%;
+}
+&::before {
+	transition: width 0.35s;
+}
+  }
+}

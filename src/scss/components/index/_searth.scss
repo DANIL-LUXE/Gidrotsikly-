@@ -1,0 +1,67 @@
+.searth{
+  margin-bottom: var(--indent-of-section);
+}
+.searth-tabs{
+  margin-bottom: 37px;
+  &__item{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    &:not(:last-child){
+      margin-right: 28px;
+    }
+    &--active{
+    border-radius: 5px;
+    padding: 11px 26px;
+    background-color:var(--base-color);
+    font-weight: 700;
+    }
+  }
+}
+.searth-content{
+  &__item{
+    display: none;
+
+
+  }
+  &__form{
+    display: flex;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    background-color:var(--base-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #656464;
+    &:focus{
+      outline: 1px solid var(--accent-color);
+    }
+    &::placeholder{
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+    }
+
+  }
+  &__button{
+  border-radius: 3px;
+  padding: 17px 39px;
+  background-color:var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:var(--light-color);
+  }
+}
+.searth-content .active{
+    display: block;
+  }

@@ -1,0 +1,115 @@
+.banner-section{
+  margin-top:var(--indent-of-section);
+  margin-bottom: var(--indent-of-section);
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__slider{
+    max-width: 870px;
+    margin-right: 10px;
+  }
+}
+.sale-item{
+  width: 265px;
+  min-height: 399px;
+  border:1px solid var(--gray-color);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+  &__price-new{
+    position: relative;
+    display: block;
+    margin-bottom: 3px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color:var(--accent-color);
+    &::after{
+      content:'';
+      position: absolute;
+      width: 16px;
+      height: 18px;
+      bottom: 8px;
+      right: 10px;
+      background-image:url('../img/icons/rub-accent.svg')
+    }
+  }
+  &__price-old{
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color:var(--gray-color);
+    &::after{
+      content:'';
+      position: absolute;
+      width: 60px;
+      height: 1px;
+      background-color: var(--gray-color);
+      transform: rotate(-5.33deg);
+      top: 7px;
+      left: 25px;
+    }
+    &::before{
+      content:'';
+      position: absolute;
+      width: 8px;
+      height: 10px;
+      bottom: 5px;
+      right: 4px;
+      background-image:url('../img/icons/rub-gray.svg')
+    }
+  }
+  &__info{
+    display: inline-block;
+    margin-left: -1px;
+    padding: 8px 20px 8px 20px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:var(--light-color);
+    background-color:var(--accent-color);
+  }
+  &__title{
+    margin: 0 auto;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color:var(--dark-color);
+  }
+  &__bottom{
+    padding: 26px 13px;
+    background-color:var(--base-color);
+  }
+  &__date{
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color:var(--dark-color);
+  }
+  &__span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color:var(--accent-color);
+  }
+}
+
